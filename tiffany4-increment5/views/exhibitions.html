@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitions | MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <div class="branding">
+                <img class="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+                <div>
+                    <h1 class="site-title">Current Exhibitions</h1>
+                    <p class="site-tagline">Featured experiences that blend code, media, and creativity.</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav_bar" id="navbar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="checkout.html">Checkout</a>
+            <span class="hamburger" onclick="toggleMenu()">☰</span>
+        </nav>
+
+        <main class="main">
+            <section class="card">
+                <h3>Digital Dreams: Art in the Age of Algorithms</h3>
+                <p>This exhibition explores how artists are using algorithms, artificial intelligence, and generative tools to create new forms of digital expression. Through interactive displays and dynamic visuals, visitors can see how machines and human creativity work together to produce art that evolves in real time.</p>
+            </section>
+
+            <section class="card">
+                <h3>Code &amp; Canvas: The Language of Creative Technology</h3>
+                <p>Code &amp; Canvas highlights the ways programming has become a medium for artistic creation. Featuring works by digital artists and designers, the exhibition showcases installations, projections, and interactive pieces that reveal how lines of code can transform into immersive visual experiences.</p>
+            </section>
+
+            <section class="card">
+                <h3>Inside Digital Art</h3>
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/1ZYbU82GVz4"
+                        title="Museum Video"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+        </main>
+
+        <figure class="main_figure">
+            <img src="../static/museum.jpg" alt="MonoMuse exhibition space with digital displays">
+            <figcaption>Rotating exhibitions invite visitors to experience how creative technology changes visual storytelling.</figcaption>
+        </figure>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>

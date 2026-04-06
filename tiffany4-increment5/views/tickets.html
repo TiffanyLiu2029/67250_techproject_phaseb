@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets | MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <div class="branding">
+                <img class="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+                <div>
+                    <h1 class="site-title">Tickets &amp; Schedule</h1>
+                    <p class="site-tagline">View admission options and reserve your visit.</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav_bar" id="navbar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="checkout.html">Checkout</a>
+            <span class="hamburger" onclick="toggleMenu()">☰</span>
+        </nav>
+
+        <main class="main">
+            <section class="card">
+                <h2>Admission</h2>
+                <table class="ticket-table">
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Adult</td>
+                        <td>General admission for ages 18 and over.</td>
+                        <td>$18</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>Student ID required.</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>Member</td>
+                        <td>Member ID required.</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Youth</td>
+                        <td>Under 18 enters free with an adult.</td>
+                        <td>$0</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="card">
+                <h2>April Visit Dates</h2>
+                <table class="ticket-table">
+                    <tr>
+                        <th>Date</th>
+                        <th>Hours</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>April 12</td>
+                        <td>10:00 AM - 5:00 PM</td>
+                        <td><button type="button" onclick="showPurchaseForm('April 12')">Buy Now</button></td>
+                    </tr>
+                    <tr>
+                        <td>April 19</td>
+                        <td>10:00 AM - 5:00 PM</td>
+                        <td><button type="button" onclick="showPurchaseForm('April 19')">Buy Now</button></td>
+                    </tr>
+                    <tr>
+                        <td>April 26</td>
+                        <td>10:00 AM - 7:00 PM</td>
+                        <td><button type="button" onclick="showPurchaseForm('April 26')">Buy Now</button></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="card" id="ticketForm">
+                <h2>Purchase Form</h2>
+                <form onsubmit="submitPurchase(event)">
+                    <div class="form-grid">
+                        <div>
+                            <label for="visitorName">Name</label>
+                            <input id="visitorName" type="text" required>
+                        </div>
+                        <div>
+                            <label for="visitorEmail">Email</label>
+                            <input id="visitorEmail" type="email" required>
+                        </div>
+                        <div>
+                            <label for="ticketQuantity">Number of Tickets</label>
+                            <input id="ticketQuantity" type="number" min="1" required>
+                        </div>
+                        <div>
+                            <label for="selectedDate">Selected Date</label>
+                            <input id="selectedDate" type="text" readonly required>
+                        </div>
+                        <div class="full">
+                            <button type="submit">Submit Purchase</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <figure class="main_figure">
+            <img src="../static/museum.jpg" alt="MonoMuse ticketing and entry area">
+            <figcaption>Choose your date, open the purchase form, and complete your ticket selection in one place.</figcaption>
+        </figure>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
