@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tiffany Liu">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <div class="branding">
+                <img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo">
+                <div>
+                    <h1 class="site-title">MonoMuse</h1>
+                    <p class="site-tagline">Where art, technology, and imagination meet.</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav_bar">
+            <a href="index.html">Home</a>
+            <a href="views/explore.html">Explore</a>
+            <a href="views/exhibitions.html">Exhibitions</a>
+            <a href="views/tickets.html">Buy Tickets</a>
+            <a href="views/checkout.html">Checkout</a>
+        </nav>
+
+        <main class="main">
+            <section class="card">
+                <h2 id="greeting">Welcome to the MonoMuse Museum</h2>
+                <p>MonoMuse is a contemporary museum dedicated to exploring the intersection of art, technology, and human creativity. Through immersive exhibitions, interactive installations, and rotating collections, MonoMuse invites visitors to discover how digital innovation is transforming the way we create, experience, and understand art.</p>
+                <p id="shortIntro">Start with our featured exhibitions, learn about the museum’s mission, and plan your visit in a few clicks.</p>
+                <p id="longIntro">Our galleries spotlight digital storytelling, creative coding, interactive media, and the future of immersive design. Visitors can explore artist collaborations, hands-on experiences, and curated exhibitions that show how emerging tools shape culture in everyday life.</p>
+                <button id="readMore" type="button">Read More</button>
+                <button id="readLess" class="secondary" type="button">Read Less</button>
+            </section>
+
+            <section class="card">
+                <h3>Plan Your Visit</h3>
+                <p>Whether you are a first-time visitor or a returning member, MonoMuse offers new perspectives on digital culture through exhibitions, educational events, and creative public programming.</p>
+                <a class="cta" href="views/tickets.html">Buy Tickets</a>
+            </section>
+        </main>
+
+        <figure class="main_figure">
+            <img src="./static/museum.jpg" alt="Exterior view of the MonoMuse museum building at dusk">
+            <figcaption>Explore a museum experience designed around contemporary digital art and creative technology.</figcaption>
+        </figure>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
