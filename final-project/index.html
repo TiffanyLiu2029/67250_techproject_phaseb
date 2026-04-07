@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tiffany Liu">
+  <meta name="description" content="MonoMuse museum website redesign final project">
+  <title>MonoMuse | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="static/style.css">
+  <script src="static/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="site-shell home-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="MonoMuse home page">
+        <img src="static/monomuselogo.png" alt="MonoMuse logo">
+        <div>
+          <p class="brand-mark">MONOMUSE</p>
+        </div>
+      </a>
+
+      <nav class="nav-bar" id="navbar" aria-label="Primary navigation">
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="views/explore.html">Explore</a>
+          <a href="views/exhibitions.html">Exhibitions</a>
+          <a href="views/tickets.html">Buy Tickets</a>
+          <a href="views/checkout.html">Checkout</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero-grid">
+        <article class="hero-copy card">
+          <p class="eyebrow">Contemporary museum experience</p>
+          <h1 id="greeting">Welcome to the MonoMuse Museum</h1>
+          <p>
+            MonoMuse is a contemporary museum dedicated to exploring the intersection of art,
+            technology, and human creativity. Through immersive exhibitions, interactive
+            installations, and rotating collections, MonoMuse invites visitors to discover how
+            digital innovation is transforming the way we create, experience, and understand art.
+          </p>
+          <p id="shortIntro">
+            Start with our featured exhibitions, plan your visit, and discover new ways technology is shaping culture.
+          </p>
+          <p id="longIntro">
+            Whether you are a first-time visitor or a returning member, our galleries spotlight digital storytelling,
+            interactive media, creative coding, and the future of immersive design. Visitors can explore artist
+            collaborations, hands-on experiences, and public programs designed to inspire curiosity and creativity.
+          </p>
+          <div class="hero-actions">
+            <button id="readMore" type="button">Read More</button>
+            <button id="readLess" class="secondary" type="button">Read Less</button>
+            <a class="cta-link" href="views/tickets.html">Buy Tickets</a>
+          </div>
+        </article>
+
+        <aside class="visitor-panel card">
+          <h2>Plan Your Visit</h2>
+          <dl class="visit-list">
+            <div>
+              <dt>Hours</dt>
+              <dd>Monday–Sunday, 10:00 AM–6:00 PM</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>500 Innovation Drive, Pittsburgh, PA</dd>
+            </div>
+            <div>
+              <dt>Tickets</dt>
+              <dd>Admission starting at $18</dd>
+            </div>
+          </dl>
+          <a class="button-link" href="views/checkout.html">Start Checkout</a>
+        </aside>
+      </section>
+
+      <section class="feature-split">
+        <figure class="main-figure">
+          <img src="static/museum-front.png" alt="Exterior view of the MonoMuse museum building with the MonoMuse sign above the entrance">
+          <figcaption>Designed around clarity, exploration, and easy visitor planning.</figcaption>
+        </figure>
+
+        <section class="card highlights-card">
+          <h2>Why visitors come to MonoMuse</h2>
+          <div class="highlight-grid">
+            <article>
+              <h3>Immersive exhibitions</h3>
+              <p>Explore digital storytelling, generative art, and interactive installations.</p>
+            </article>
+            <article>
+              <h3>Easy planning</h3>
+              <p>Find hours, location, ticket pricing, and checkout details without hunting through the site.</p>
+            </article>
+            <article>
+              <h3>Creative community</h3>
+              <p>Attend artist talks, workshops, and hands-on experiences built for first-time and returning visitors.</p>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>
+</html>

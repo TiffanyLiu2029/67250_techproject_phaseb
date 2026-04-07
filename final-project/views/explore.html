@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about MonoMuse, its mission, milestones, and location.">
+  <title>MonoMuse | Explore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  <!-- External library citation: Leaflet map library is used for the interactive location map. -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="../static/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="MonoMuse home page">
+        <img src="../static/monomuselogo.png" alt="MonoMuse logo">
+        <div>
+          <p class="brand-mark">MONOMUSE</p>
+        </div>
+      </a>
+
+      <nav class="nav-bar" id="navbar" aria-label="Primary navigation">
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="../index.html">Home</a>
+          <a href="explore.html">Explore</a>
+          <a href="exhibitions.html">Exhibitions</a>
+          <a href="tickets.html">Buy Tickets</a>
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" class="two-column-page">
+      <section class="content-column">
+        <section class="card">
+          <p class="eyebrow">About us</p>
+          <h1>Explore MonoMuse</h1>
+          <h2>Mission Statement</h2>
+          <p>MonoMuse is dedicated to exploring the evolving relationship between art, technology, and society. Our mission is to inspire curiosity and creativity by showcasing innovative exhibitions that highlight how digital tools, emerging technologies, and human imagination shape the future of artistic expression.</p>
+        </section>
+
+        <section class="card">
+          <h2>Who We Serve</h2>
+          <p>MonoMuse serves artists, students, researchers, and the general public who are interested in the intersection of art and technology. Our spaces are designed for learning, experimentation, and conversation.</p>
+        </section>
+
+        <section class="card">
+          <h2>Milestones</h2>
+          <ul class="milestone-list">
+            <li><strong>2023:</strong> Expanded the museum space and launched international artist collaborations.</li>
+            <li><strong>2018:</strong> Opened the Interactive Media Lab for creative coding experiments.</li>
+            <li><strong>2016:</strong> Debuted the museum with its first exhibition on digital storytelling.</li>
+          </ul>
+        </section>
+      </section>
+
+      <aside class="side-column">
+        <figure class="stacked-figure card no-pad">
+          <img src="../static/museum-front.png" alt="MonoMuse museum entrance with illuminated signage and modern architecture">
+        </figure>
+
+        <section class="card">
+          <h2>Visit Us</h2>
+          <p>Use the interactive map below to view the museum's Pittsburgh location.</p>
+          <div id="map" aria-label="Map showing the location of MonoMuse in Pittsburgh"></div>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>
+</html>

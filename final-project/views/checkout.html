@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete a MonoMuse ticket checkout with validation and total price calculation.">
+  <title>MonoMuse | Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="../static/style.css">
+  <script src="../static/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="MonoMuse home page">
+        <img src="../static/monomuselogo.png" alt="MonoMuse logo">
+        <div>
+          <p class="brand-mark">MONOMUSE</p>
+        </div>
+      </a>
+
+      <nav class="nav-bar" id="navbar" aria-label="Primary navigation">
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="../index.html">Home</a>
+          <a href="explore.html">Explore</a>
+          <a href="exhibitions.html">Exhibitions</a>
+          <a href="tickets.html">Buy Tickets</a>
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" class="two-column-page">
+      <section class="content-column">
+        <section class="card home-light">
+          <p class="eyebrow">Ticket checkout</p>
+          <h1>Complete your MonoMuse reservation</h1>
+          <p>Choose a visit date, select your ticket type and quantity, and place your simulated order.</p>
+        </section>
+
+        <section class="card home-light">
+          <form id="checkoutForm" novalidate>
+            <div class="form-grid">
+              <div>
+                <label for="visitDate">Visit Date <span aria-hidden="true">*</span></label>
+                <input id="visitDate" name="visitDate" type="date" required>
+                <p class="error-text" id="visitDateError"></p>
+              </div>
+
+              <div>
+                <label for="ticketType">Ticket Type <span aria-hidden="true">*</span></label>
+                <select id="ticketType" name="ticketType" required>
+                  <option value="">Select a ticket type</option>
+                  <option value="General">General</option>
+                  <option value="Student">Student</option>
+                  <option value="Member">Member</option>
+                </select>
+                <p class="error-text" id="ticketTypeError"></p>
+              </div>
+
+              <div>
+                <label for="ticketQuantity">Ticket Quantity (1-10) <span aria-hidden="true">*</span></label>
+                <input id="ticketQuantity" name="ticketQuantity" type="number" min="1" max="10" required>
+                <p class="error-text" id="ticketQuantityError"></p>
+              </div>
+
+              <div>
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" required>
+                <p class="error-text" id="emailError"></p>
+              </div>
+
+              <div>
+                <label for="zipCode">Zip Code</label>
+                <input id="zipCode" name="zipCode" type="text" inputmode="numeric" maxlength="5">
+                <p class="error-text" id="zipCodeError"></p>
+              </div>
+
+              <div class="checkbox-wrap">
+                <label for="mailingList" class="checkbox-label">
+                  <input id="mailingList" name="mailingList" type="checkbox">
+                  Join our mailing list
+                </label>
+              </div>
+
+              <div class="full total-panel">
+                <p>Ticket price: <strong>$18 each</strong></p>
+                <p class="total-cost">Estimated Total: <span id="totalCost">$0</span></p>
+              </div>
+
+              <div class="full">
+                <button type="submit">Place Order</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </section>
+
+      <aside class="side-column">
+        <section class="card home-light">
+          <h2>Checkout Notes</h2>
+          <ul class="simple-list">
+            <li>This is a simulated checkout for a class project.</li>
+            <li>Every ticket type costs $18 for automatic price calculation.</li>
+            <li>You will be redirected to a confirmation page after valid submission.</li>
+          </ul>
+        </section>
+
+        <figure class="stacked-figure card no-pad">
+          <img src="../static/museum-front.png" alt="MonoMuse museum entrance with warm interior lighting visible through glass walls">
+        </figure>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>
+</html>

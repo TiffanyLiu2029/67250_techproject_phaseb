@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View your MonoMuse simulated order confirmation.">
+  <title>MonoMuse | Confirmation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="../static/style.css">
+  <script src="../static/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="MonoMuse home page">
+        <img src="../static/monomuselogo.png" alt="MonoMuse logo">
+        <div>
+          <p class="brand-mark">MONOMUSE</p>
+        </div>
+      </a>
+
+      <nav class="nav-bar" id="navbar" aria-label="Primary navigation">
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="../index.html">Home</a>
+          <a href="explore.html">Explore</a>
+          <a href="exhibitions.html">Exhibitions</a>
+          <a href="tickets.html">Buy Tickets</a>
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" class="confirmation-page">
+      <section class="card confirmation-card">
+        <p class="eyebrow">Order confirmed</p>
+        <h1>Thank you for reserving your visit</h1>
+        <p>Your simulated MonoMuse ticket order has been placed successfully.</p>
+
+        <div class="confirmation-grid">
+          <p><strong>Visit Date:</strong> <span id="confirmDate">—</span></p>
+          <p><strong>Ticket Type:</strong> <span id="confirmType">—</span></p>
+          <p><strong>Quantity:</strong> <span id="confirmQuantity">—</span></p>
+          <p><strong>Email:</strong> <span id="confirmEmail">—</span></p>
+          <p><strong>Mailing List:</strong> <span id="confirmMailingList">—</span></p>
+          <p><strong>Total Cost:</strong> <span id="confirmTotal">—</span></p>
+        </div>
+
+        <div class="hero-actions">
+          <a class="button-link" href="tickets.html">Reserve Another Date</a>
+          <a class="cta-link" href="../index.html">Return Home</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>
+</html>

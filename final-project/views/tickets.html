@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View MonoMuse ticket pricing, visit times, and checkout shortcut.">
+  <title>MonoMuse | Buy Tickets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="../static/style.css">
+  <script src="../static/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="MonoMuse home page">
+        <img src="../static/monomuselogo.png" alt="MonoMuse logo">
+        <div>
+          <p class="brand-mark">MONOMUSE</p>
+        </div>
+      </a>
+
+      <nav class="nav-bar" id="navbar" aria-label="Primary navigation">
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="../index.html">Home</a>
+          <a href="explore.html">Explore</a>
+          <a href="exhibitions.html">Exhibitions</a>
+          <a href="tickets.html">Buy Tickets</a>
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" class="two-column-page">
+      <section class="content-column">
+        <section class="card">
+          <p class="eyebrow">Tickets and planning</p>
+          <h1>Choose the best time for your visit</h1>
+          <p>Browse ticket options, compare pricing, and jump straight into checkout when you are ready to reserve your visit.</p>
+        </section>
+
+        <section class="card">
+          <h2>Admission Table</h2>
+          <table class="ticket-table">
+            <thead>
+              <tr>
+                <th scope="col">Ticket Type</th>
+                <th scope="col">Description</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>General</td>
+                <td>Standard museum admission for all visitors.</td>
+                <td>$18</td>
+              </tr>
+              <tr>
+                <td>Student</td>
+                <td>Bring a valid student ID for entry.</td>
+                <td>$18</td>
+              </tr>
+              <tr>
+                <td>Member</td>
+                <td>Reserved online to streamline member check-in.</td>
+                <td>$18</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="card">
+          <h2>Upcoming Visit Dates</h2>
+          <table class="ticket-table">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Hours</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>April 12</td>
+                <td>10:00 AM - 5:00 PM</td>
+                <td><a class="inline-link" href="checkout.html?date=2026-04-12">Reserve April 12</a></td>
+              </tr>
+              <tr>
+                <td>April 19</td>
+                <td>10:00 AM - 5:00 PM</td>
+                <td><a class="inline-link" href="checkout.html?date=2026-04-19">Reserve April 19</a></td>
+              </tr>
+              <tr>
+                <td>April 26</td>
+                <td>10:00 AM - 7:00 PM</td>
+                <td><a class="inline-link" href="checkout.html?date=2026-04-26">Reserve April 26</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+
+      <aside class="side-column">
+        <section class="card">
+          <h2>Need help deciding?</h2>
+          <ul class="simple-list">
+            <li>All tickets are $18 for this project checkout flow.</li>
+            <li>Choose 1 to 10 tickets during checkout.</li>
+            <li>Use your email to receive your confirmation page details.</li>
+          </ul>
+          <a class="button-link" href="checkout.html">Go to Checkout</a>
+        </section>
+
+        <figure class="stacked-figure card no-pad">
+          <img src="../static/museum-front.png" alt="MonoMuse museum entrance and front steps in evening light">
+        </figure>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>
+</html>
