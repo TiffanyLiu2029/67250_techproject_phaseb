@@ -122,17 +122,9 @@ function validateCheckoutForm() {
   const zipCode = document.getElementById('zipCode');
   const mailingList = document.getElementById('mailingList');
 
-  const fields = [
-    ['visitDateError', ''],
-    ['ticketTypeError', ''],
-    ['ticketQuantityError', ''],
-    ['emailError', ''],
-    ['zipCodeError', '']
-  ];
-
-  fields.forEach(([id, message]) => {
+  ['visitDateError', 'ticketTypeError', 'ticketQuantityError', 'emailError', 'zipCodeError'].forEach((id) => {
     const element = document.getElementById(id);
-    if (element) element.textContent = message;
+    if (element) element.textContent = '';
   });
 
   form.addEventListener('input', updateTotal);
@@ -187,19 +179,12 @@ function populateConfirmation() {
   if (!document.getElementById('confirmDate')) return;
 
   const params = new URLSearchParams(window.location.search);
-  const date = params.get('date') || '—';
-  const type = params.get('type') || '—';
-  const quantity = params.get('quantity') || '—';
-  const email = params.get('email') || '—';
-  const total = params.get('total') || '—';
-  const mailingList = params.get('mailingList') || 'No';
-
-  document.getElementById('confirmDate').textContent = date;
-  document.getElementById('confirmType').textContent = type;
-  document.getElementById('confirmQuantity').textContent = quantity;
-  document.getElementById('confirmEmail').textContent = email;
-  document.getElementById('confirmMailingList').textContent = mailingList;
-  document.getElementById('confirmTotal').textContent = `$${total}`;
+  document.getElementById('confirmDate').textContent = params.get('date') || '—';
+  document.getElementById('confirmType').textContent = params.get('type') || '—';
+  document.getElementById('confirmQuantity').textContent = params.get('quantity') || '—';
+  document.getElementById('confirmEmail').textContent = params.get('email') || '—';
+  document.getElementById('confirmMailingList').textContent = params.get('mailingList') || 'No';
+  document.getElementById('confirmTotal').textContent = `$${params.get('total') || '—'}`;
 }
 
 function initLeafletMap() {

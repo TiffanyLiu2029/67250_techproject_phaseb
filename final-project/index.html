@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Tiffany Liu">
-  <meta name="description" content="MonoMuse museum website redesign final project">
+  <meta name="description" content="MonoMuse museum home page with museum overview, visit planning details, and donation support options.">
   <title>MonoMuse | Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- External library citation: jQuery is used for the Read More animation on this site. -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <link rel="stylesheet" href="static/style.css">
   <script src="static/script.js" defer></script>
 </head>
@@ -17,7 +19,7 @@
   <div class="site-shell home-shell">
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="MonoMuse home page">
-        <img src="static/monomuselogo.png" alt="MonoMuse logo">
+        <img src="static/monomuselogo.png" alt="MonoMuse logo featuring an M shaped museum column and the words MonoMuse Museum">
         <div>
           <p class="brand-mark">MONOMUSE</p>
         </div>
@@ -32,6 +34,7 @@
           <a href="views/explore.html">Explore</a>
           <a href="views/exhibitions.html">Exhibitions</a>
           <a href="views/tickets.html">Buy Tickets</a>
+          <a href="views/donate.html">Donate</a>
           <a href="views/checkout.html">Checkout</a>
         </div>
       </nav>
@@ -49,7 +52,7 @@
             digital innovation is transforming the way we create, experience, and understand art.
           </p>
           <p id="shortIntro">
-            Start with our featured exhibitions, plan your visit, and discover new ways technology is shaping culture.
+            Start with our featured exhibitions, plan your visit, support the museum, and discover new ways technology is shaping culture.
           </p>
           <p id="longIntro">
             Whether you are a first-time visitor or a returning member, our galleries spotlight digital storytelling,
@@ -60,6 +63,7 @@
             <button id="readMore" type="button">Read More</button>
             <button id="readLess" class="secondary" type="button">Read Less</button>
             <a class="cta-link" href="views/tickets.html">Buy Tickets</a>
+            <a class="button-link" href="views/donate.html">Support MonoMuse</a>
           </div>
         </article>
 
@@ -77,6 +81,10 @@
             <div>
               <dt>Tickets</dt>
               <dd>Admission starting at $18</dd>
+            </div>
+            <div>
+              <dt>Contact</dt>
+              <dd>visit@monomuse.org | (412) 555-0116</dd>
             </div>
           </dl>
           <a class="button-link" href="views/checkout.html">Start Checkout</a>
@@ -107,10 +115,24 @@
           </div>
         </section>
       </section>
+
+      <section class="support-grid">
+        <section class="card">
+          <p class="eyebrow">Support options</p>
+          <h2>Membership and giving</h2>
+          <p>Visitors can support MonoMuse through flexible one-time gifts or by learning more about member benefits on the donations page.</p>
+          <a class="button-link" href="views/donate.html">Explore Donation Options</a>
+        </section>
+
+        <figure class="stacked-figure card no-pad">
+          <img src="static/gallery3.jpg" alt="Interior MonoMuse gallery with warm lighting, sculptures, and framed artwork along a hallway">
+        </figure>
+      </section>
     </main>
 
     <footer class="site-footer">
       <p id="copyYear"></p>
+      <p class="footer-contact">Email visit@monomuse.org for questions| Call (111) 111-1111</p>
     </footer>
   </div>
 </body>

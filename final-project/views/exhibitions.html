@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="View current MonoMuse exhibitions, gallery images, and embedded museum media.">
+  <meta name="description" content="View current MonoMuse exhibitions, an interactive gallery, and embedded museum media.">
   <title>MonoMuse | Exhibitions</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="../static/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- External library citation: jQuery is used on the home page; no frameworks are used. -->
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="../static/script.js" defer></script>
 </head>
 <body>
@@ -15,7 +18,7 @@
   <div class="site-shell">
     <header class="site-header">
       <a class="brand" href="../index.html" aria-label="MonoMuse home page">
-        <img src="../static/monomuselogo.png" alt="MonoMuse logo">
+        <img src="../static/monomuselogo.png" alt="MonoMuse logo featuring an M shaped museum column and the words MonoMuse Museum">
         <div>
           <p class="brand-mark">MONOMUSE</p>
         </div>
@@ -30,6 +33,7 @@
           <a href="explore.html">Explore</a>
           <a href="exhibitions.html">Exhibitions</a>
           <a href="tickets.html">Buy Tickets</a>
+          <a href="donate.html">Donate</a>
           <a href="checkout.html">Checkout</a>
         </div>
       </nav>
@@ -75,9 +79,12 @@
             <img src="../static/museum-front.png" alt="Front exterior of the MonoMuse museum building with glowing sign and steps leading to the entrance">
             <figcaption>The museum exterior uses strong architectural lines and warm evening lighting.</figcaption>
           </figure>
+          <figure class="slide">
+            <img src="../static/gallery3.jpg" alt="Long gallery hallway inside MonoMuse with sculptures, framed artwork, and warm ceiling lights">
+            <figcaption>Visitors move through calm, spacious rooms designed for close looking and easy navigation.</figcaption>
+          </figure>
         </div>
       </section>
-
 
       <section class="card">
         <p class="eyebrow">MonoMuse spaces</p>
@@ -87,6 +94,7 @@
           <img src="../static/museum-front.png" alt="Front façade of MonoMuse with the museum name centered above the entrance">
         </div>
       </section>
+
       <section class="card">
         <p class="eyebrow">Embedded media</p>
         <h2>Inside Digital Art</h2>
@@ -98,6 +106,7 @@
 
     <footer class="site-footer">
       <p id="copyYear"></p>
+      <p class="footer-contact">Email visit@monomuse.org for questions| Call (111) 111-1111</p>
     </footer>
   </div>
 </body>
